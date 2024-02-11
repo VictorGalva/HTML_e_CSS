@@ -1,2 +1,2 @@
 # HTML_e_CSS
-Apenas alguns exercicios
+Apenas alguns exercícios
