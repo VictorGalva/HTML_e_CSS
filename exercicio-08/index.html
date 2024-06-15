@@ -3,52 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de texto</title>
-    <style>
-        mark {
-            background-color:green;
-        }
-    </style>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito /destaque</h2>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré-formatações</h2>
     <p>
-        Nesta frase, temos um <b>termo em negrito</b> usando a tag B (não semântica).
+        O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.
     </p>
+    <pre>
+        <code>
+    num = int(input('Informe o número: '))
+
+    if num % 2 == 0:
+        print(f'O número {num} é par.')
+    else:
+        print(f'O número {num} é ímpar.')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
     <p>
-        Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica).
+        Como diria o pai de um amigo meu: <q>O computador é um burro muito rápido</q>.
     </p>
-    <h2>Italico / emfase</h2>
+    <h2>Citações completas</h2>
+    <blockquote>
+        Fiz uma promeça pra mim mesmo: nunca mais comer torresmo. Alguem me disse outro dia, que para sentir satisfação e alegria é nescessario ser caridoso. Me dá um real, me dá um real aiii...
+    </blockquote>
+    <h2>Abreviações</h2>
     <p>
-        Nesta frase, temos um <i>termo em italico</i> usando a tag I (Não samântica).
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cacading Style Sheets">CSS</abbr>. Tá show de bola!
     </p>
-    <p>Nesta frase, temos um <em>termo em emfase</em> usando a tag EM (semântica)</p>
-    <h2>Texto marcado</h2>
+    <h2>Texto invertido</h2>
     <p>
-        Podemos criar também um <mark>texto marcado</mark> usando a tag MARK. A cor dessa marcação pode ser mudada utilizando o parametro STYLE.
-    </p>
-    <p>
-        E no outro, paragafo temos outro <mark>texto marcado</mark> no final.
-    </p>
-    <h2>Texto grande e pequeno</h2>
-    <p>
-        Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo (a tag BIG já não é mais utilizada).
-    </p>
-    <h2>Texto com ênfase</h2>
-    <p>
-        Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.
-    </p>
-    <p>
-        Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.
-    </p>
-    <h2>Texto sobrescrito</h2>
-    <p>
-        Para inserir coisas do tipo: (7-12)<sup>4</sup> / 8<sup>3</sup>
-    </p>
-    <h2>Texto subscrito</h2>
-    <p>
-        Para escrever coisas do tipo: H<sub>2</sub>O
+        <bdo dir="rtl">Esta frase tá invertida!</bdo>
     </p>
 </body>
 </html>
