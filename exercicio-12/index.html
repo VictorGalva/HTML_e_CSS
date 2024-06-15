@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midias em HTML</title>
+    <title>Formatos de vídeos</title>
 </head>
 <body>
-    <H1>Imagens Dinâmicas</H1>
+    <h1>Inserindo vídeos hospedados localmente</h1>
     <p>
-        Tente abrir esse html em dispositivos diferentes ou simplemente mude o tamanho da janela do seu navegador.
+        Este vídeo está hospedado localmente no meu servidor
     </p>
 
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/imagemTestePequena.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/imagemTesteMedia.png" type="image/png">
-        <img src="imagens/imagemTesteGrande.png" alt="imagem flexivel">
-    </picture>
-</body>
+        <video controls autoplay loop width="560" poster="imagens/tumb.png">
+            <source src="midias/videoVaca-03.mkv" type="video/mkv">
+            <source src="midias/videoVaca-02.m4v" type="video/m4v">
+            <source src="midias/videoVaca.mp4" type="video/mp4">
+        </video>
+
+        <h1>Inserindo vídeo do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P4Ru46-zjck?si=yxd5wjMrVJAqq8-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h1>Inserindo vídeo do Vimeo</h1>
+        <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666&autoplay=1&loop=1&byline=0&portrait=0" width="560" height="3150" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
 </html>
