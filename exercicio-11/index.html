@@ -3,28 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
+    <title>Midias em HTML</title>
 </head>
 <body>
-    <h1>Trabalhando com links</h1>
-    <h2>Usando links externos</h2>
+    <H1>Imagens Dinâmicas</H1>
     <p>
-        Você pode acessar <a href="https://github.com/VictorGalva" target="_blank" rel="external">meu GitHub &#128513;</a>
+        Tente abrir esse html em dispositivos diferentes ou simplemente mude o tamanho da janela do seu navegador.
     </p>
-    <p>
-        Você também pode jogar um <a href="https://freeasteroids.org/" target="_blank" rel="external">clássico dos games &#128640;</a>
-    </p>
-    <h2>Usando links internos</h2>
-    <p>
-        Você também pode acessar a minha <a href="pag02.html" target="_self" rel="next">segunda pagina.</a>
-    </p>
-    <P>
-        Você também pode acessar a minha <a href="past01/pag03.html" target="_self" rel="next">terceira pagina.</a>
-    </P>
-    <h2>Links para download</h2>
-    <p>
-        Clique aqui para baixar uma <a href="imagens/puckBersek.jpg" download="puckBerserk.jpg">imagem do puck de berserk.</a>
-    </p>
-    <img src="imagens/puckBersek.jpg" alt="Puck de Berserk">
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagemTestePequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemTesteMedia.png" type="image/png">
+        <img src="imagens/imagemTesteGrande.png" alt="imagem flexivel">
+    </picture>
 </body>
 </html>
