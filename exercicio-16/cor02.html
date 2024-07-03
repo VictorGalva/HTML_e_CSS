@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes de cores</title>
+    <style>
+        .quadro-1{
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+            background-image: linear-gradient(to right, #F03F29, #C6F02A, #297BF0);
+        }
+        .quadro-2{
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+            background-image: linear-gradient(to bottom, #F03F29, #C6F02A, #297BF0);
+        }
+        .quadro-3{
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+            background-image: linear-gradient(45deg, #F03F29, #C6F02A, #297BF0);
+        }
+        .quadro-4{
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+            background-image: radial-gradient(#C6F02A, #297BF0, #F03F29);
+        }
+        .quadro-5{
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+            background-image: linear-gradient(to right, #C6F02A 40%, #297BF0, #F03F29 );
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+    
+    <h3>Gradiente na horizontal:</h3>
+    <div class="quadro-1"></div>
+
+    <h3>Gradiente na vertical:</h3>
+    <div class="quadro-2"></div>
+
+    <h3>Gradiente na diagonal:</h3>
+    <div class="quadro-3"></div>
+
+    <h3>Gradiente circular (radial):</h3>
+    <div class="quadro-4"></div>
+
+    <h3>Gradiente com variação na porcentagem da cor:</h3>
+    <div class="quadro-5"></div>
+
+
+</body>
+</html>
